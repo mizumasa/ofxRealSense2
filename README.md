@@ -1,7 +1,9 @@
 # ofxRealSense2
 
 Thank you for watching. 
+
 This is a minimal sample for using Depth Camera D415 and D435 on openframeworks(oF). 
+
 This is based on Intel® RealSense™ SDK 2.0.
 
 # install
@@ -9,12 +11,15 @@ This is based on Intel® RealSense™ SDK 2.0.
 ## BUILD SDK for RealSense
 
 How to install
+
 -> https://github.com/IntelRealSense/librealsense/blob/8e7db477a69741ca413a6b4d6402d19c8aace00e/doc/installation_osx.md
 
 We already have Pre-built library (librealsense2.2.10.1.dylib)
+
 If you need, bring dylib file to directory "ofxRealSense2/libs/realsense2/lib/osx/"
 
 ## Screenshot
+
 ![sample](https://github.com/mizumasa/ofxRealSense2/blob/master/screenshot.png "サンプル")
 
 ## Future Sample
