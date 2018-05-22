@@ -14,6 +14,7 @@ This is based on Intel® RealSense™ SDK 2.0.
 
 * OSX  (not supported on Windows and Linux)
 * tested on oF v0.9.8
+* Intel RealSense D415 or D435
 
 # install
 
