@@ -13,6 +13,7 @@ This is based on Intel® RealSense™ SDK 2.0.
 # Requirement
 
 * OSX  (not supported on Windows and Linux)
+* tested on oF v0.9.8
 
 # install
 
