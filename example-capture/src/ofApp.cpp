@@ -2,7 +2,7 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    ofSetWindowShape(1280, 480);
+    ofSetWindowShape(1280, 960);
     realsense.setup();
 }
 
@@ -16,6 +16,7 @@ void ofApp::draw(){
     ofBackground(0, 0, 0);
     realsense.draw(0, 0, 640, 480);
     realsense.drawDepth(640, 60, 640, 360);
+    realsense.drawIR(0, 540, 640, 360);
 }
 
 //--------------------------------------------------------------
