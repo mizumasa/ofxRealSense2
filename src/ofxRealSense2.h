@@ -16,28 +16,37 @@ class ofxRealSense2{
         ofxRealSense2();
         bool setup();
         void update();
-    
-    
+
+
     ofPixels & getPixels();
     ofPixels & getDepthPixels();
-    
+    ofPixels & getIRPixels();
+
     /// draw the color video
     void draw(float x, float y, float w, float h) const;
     void draw(float x, float y) const;
     void draw(const ofPoint& point) const;
     void draw(const ofRectangle& rect) const;
-    
+
     /// draw the color depth map
     void drawDepth(float x, float y, float w, float h) const;
     void drawDepth(float x, float y) const;
     void drawDepth(const ofPoint& point) const;
     void drawDepth(const ofRectangle& rect) const;
 
-    
+    /// draw the IR video
+    void drawIR(float x, float y, float w, float h) const;
+    void drawIR(float x, float y) const;
+    void drawIR(const ofPoint& point) const;
+    void drawIR(const ofRectangle& rect) const;
+
+
     private:
         rs2::colorizer color_map;
+        rs2::config config;
         rs2::pipeline pipe;
-    
+
         ofImage colorImage;
         ofImage depthImage;
+        ofImage infraredImage;
 };
